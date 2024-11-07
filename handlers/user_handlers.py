@@ -8,4 +8,4 @@ router: Router = Router()
 
 @router.message(Command(commands=['start']))
 async def process_command_start(message: Message):
-    await message.answer("LOL")
+    await message.answer(LEXICON.get('/start'))
